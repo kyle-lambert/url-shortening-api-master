@@ -2,15 +2,184 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/app.js" defer></script>
-    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/app.js" defer></script>
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__topbar">
+      <a href="/" class="logo">
+        <img src="images/logo.svg" alt="Shortly brand logo" class="logo__img">
+      </a>
+
+      <button class="hamburger">
+        <img src="images/icon-hamburger.svg" alt="Hamburger toggle icon" class="hamburger__icon">
+      </button>
+    </div>
+
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Features</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Pricing</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Recources</a>
+        </li>
+      </ul>
+      <div class="btn__group">
+        <button class="btn">Login</button>
+        <button class="btn btn--primary btn--rounded">Sign Up</button>
+      </div>
+
+    </nav>
+
+  </header>
+
+  <section class="intro">
+    <div class="intro__body">
+      <div class="text-box">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand's recognition and get detailed insights on how your links are performing</p>
+      </div>
+    </div>
+
+    <div class="illustration">
+      <img src="images/illustration-working.svg" alt="" class="illustration__img">
+    </div>
+  </section>
+
+  <section class="url">
+    <form action="#" class="form">
+      <div class="input-wrapper">
+        <input type="text" class="form__input" placeholder="Shorten a link here...">
+        <span class="form__message">Please add a link</span>
+      </div>
+      <button type="submit" class="btn btn--primary">Shorten It!</button>
+    </form>
+
+    <div class="item">
+      <span class="item__input">https://www.frontendmentour.io</span>
+      <span class="item__output">https://rel.ink/k4lKyk</span>
+      <button class="btn btn--primary">Copy</button>
+    </div>
+  </section>
+
+  <section class="feature">
+    <div class="text-box">
+      <h2>Advanced Statistics</h2>
+      <p>Track your your links are performing across the web with our advanced statistics dashboard.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="text-box">
+          <h3>Brand Recognition</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, suscipit rerum saepe dolore provident
+            veniam quia ad optio libero, modi, ipsa ut unde explicabo sapiente exercitationem eius velit recusandae
+            repudiandae?</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="text-box">
+          <h3>Detailed Records</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum asperiores voluptas sint dolorem adipisci
+            perspiciatis nesciunt quod! Et autem magnam ratione eos facilis numquam officia corporis nemo, quidem
+            officiis itaque.Voluptate error accusantium sed minus, voluptatibus eos molestiae repellendus, eum, nobis
+            mollitia vero. Ad voluptate soluta maxime, delectus quae qui hic earum autem ullam incidunt inventore fuga
+            porro, at tempore!</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="text-box">
+          <h3>Fully Customisable</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, suscipit rerum saepe dolore provident
+            veniam quia ad optio libero, modi, ipsa ut unde explicabo sapiente exercitationem eius velit recusandae
+            repudiandae? Ad voluptate soluta maxime, delectus quae qui hic earum autem ullam incidunt inventore fuga
+            porro, at tempore!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="text-box">
+      <h2>Boost your links today</h2>
+      <button class="btn btn--primary btn--rounded">Get Started</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <a href="/" class="logo">
+      <img src="images/logo.svg" alt="Shortly brand logo" class="logo__img">
+    </a>
+
+    <nav class="footer-nav">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item footer-nav__item--header">Features</li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Link Shortening</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Branded Links</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Analytics</a>
+        </li>
+      </ul>
+
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item footer-nav__item--header">Recources</li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Blog</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Developer</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Support</a>
+        </li>
+      </ul>
+
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item footer-nav__item--header">Company</li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">About</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Our Team</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Careers</a>
+        </li>
+        <li class="footer-nav__item">
+          <a href="#" class="footer-nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="social">
+      <a href="#" class="social__link">
+        <img src="images/icon-facebook.svg" alt="Facebook logo" class="social__img">
+      </a>
+      <a href="#" class="social__link">
+        <img src="images/icon-twitter.svg" alt="Twitter logo" class="social__img">
+      </a>
+      <a href="#" class="social__link">
+        <img src="images/icon-pinterest.svg" alt="Pinterest logo" class="social__img">
+      </a>
+      <a href="#" class="social__link">
+        <img src="images/icon-instagram.svg" alt="Instagram logo" class="social__img">
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

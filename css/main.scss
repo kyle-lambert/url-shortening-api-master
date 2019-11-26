@@ -1,3 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap');
+
+// Variables
+$cyan: #2acfcf;
+$dark-violet: #3b3054;
+$red: #f46262;
+$grey: #bfbfbf;
+$greyish-violet: #9e9aa7;
+$very-dark-blue: #35323e;
+$very-dark-violet: #232127;
+
+// Global resets
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: red;
+  box-sizing: inherit;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: $greyish-violet;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+// Typography
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: $very-dark-blue;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+// Layout
+.intro,
+.url,
+.feature {
+  padding: 0 2.4rem;
+  margin-bottom: 6rem;
+}
+
+.cta,
+.footer {
+  padding: 0 2.4rem;
+}
+
+
+// Header
+.header {
+
+  &__topbar {
+    padding: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.logo {
+  width: 121px;
+
+  &__img {
+    display: block;
+  }
+}
+
+.hamburger {
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+
+  &__icon {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+// Navigation
+.nav {
+  display: none;
+  margin: 0 2.4rem 1.2rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: $dark-violet;
+  color: #fff;
+
+  &__list {
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid $grey;
+  }
+
+  &__item {
+    padding: 1.2rem;
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+// Buttons
+.btn {
+  color: #fff;
+  outline: none;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &__group {
+    margin-top: 1rem;
+  }
+
+  &--primary {
+    background-color: $cyan;
+    border-radius: 5px;
+  }
+
+  &--rounded {
+    border-radius: 50px;
+  }
+
 }
