@@ -20,22 +20,40 @@
       <button class="hamburger">
         <img src="images/icon-hamburger.svg" alt="Hamburger toggle icon" class="hamburger__icon">
       </button>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Recources</a>
+          </li>
+        </ul>
+        <div class="btn__group">
+          <button class="btn">Login</button>
+          <button class="btn btn--primary btn--rounded btn--">Sign Up</button>
+        </div>
+      </nav>
     </div>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Features</a>
+    <nav class="mb-nav">
+      <ul class="mb-nav__list">
+        <li class="mb-nav__item">
+          <a href="#" class="mb-nav__link">Features</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Pricing</a>
+        <li class="mb-nav__item">
+          <a href="#" class="mb-nav__link">Pricing</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Recources</a>
+        <li class="mb-nav__item">
+          <a href="#" class="mb-nav__link">Recources</a>
         </li>
       </ul>
       <div class="btn__group">
-        <button class="btn">Login</button>
+        <button class="btn btn--login">Login</button>
         <button class="btn btn--primary btn--rounded">Sign Up</button>
       </div>
     </nav>
@@ -49,6 +67,7 @@
         <h1>More than just shorter links</h1>
         <p>Build your brand's recognition and get detailed insights on how your links are performing</p>
       </div>
+      <button class="btn btn--primary btn--rounded">Get Started</button>
     </div>
 
     <div class="illustration">
@@ -57,18 +76,26 @@
   </section>
 
   <section class="url">
-    <form action="#" class="form">
-      <div class="input-wrapper">
-        <input type="text" class="form__input" placeholder="Shorten a link here...">
-        <span class="form__message">Please add a link</span>
-      </div>
-      <button type="submit" class="btn btn--primary">Shorten It!</button>
-    </form>
+    <div class="url__container">
+      <form action="#" class="form">
+        <div class="input-wrapper">
+          <input type="text" class="form__input" placeholder="Shorten a link here...">
+          <span class="form__message">Please add a link</span>
+        </div>
+        <button type="submit" class="btn btn--primary">Shorten It!</button>
+      </form>
 
-    <div class="item">
-      <span class="item__input">https://www.frontendmentour.io</span>
-      <span class="item__output">https://rel.ink/k4lKyk</span>
-      <button class="btn btn--primary">Copy</button>
+      <div class="item">
+        <span class="item__input">https://www.frontendmentour.io</span>
+        <span class="item__output">https://rel.ink/k4lKyk</span>
+        <button class="btn btn--primary">Copy</button>
+      </div>
+
+      <div class="item">
+        <span class="item__input">https://www.frontendmentour.io</span>
+        <span class="item__output">https://rel.ink/k4lKyk</span>
+        <button class="btn btn--primary btn--copied">Copy</button>
+      </div>
     </div>
   </section>
 
