@@ -68,14 +68,24 @@ h3 {
   padding: 0 2.4rem;
 }
 
+.header {
+  position: relative;
+}
+
 .header__topbar {
-  padding: 2.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 2.4rem;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .logo {
