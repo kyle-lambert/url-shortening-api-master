@@ -26,7 +26,7 @@ html {
 body {
   box-sizing: inherit;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   text-align: center;
   color: $greyish-violet;
@@ -57,15 +57,15 @@ h3 {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 p {
@@ -84,7 +84,7 @@ p {
   grid-area: illustration;
 
   &__img {
-    max-width: 150%; // TODO
+    max-width: 150%;
   }
 }
 
@@ -262,7 +262,7 @@ p {
   }
 
   &__message {
-    display: none; // TODO
+    display: none;
     text-align: left;
     font-size: 1.2rem;
     font-style: italic;
@@ -291,7 +291,7 @@ p {
   &__input,
   &__output {
     display: block;
-    font-size: 1.6rem;
+    font-size: inherit;
     font-weight: 400;
     text-align: left;
     padding: 1.2rem 0;
@@ -342,7 +342,7 @@ p {
 
   &__card {
     position: relative;
-    padding: 6rem 2.4rem 1.4rem;
+    padding: 6rem 2.4rem 2.4rem;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, .1);
@@ -390,9 +390,290 @@ p {
 }
 
 // Footer
-
 .footer {
   background-color: $very-dark-violet;
   padding: 2.8rem 2.4rem;
   color: #fff;
+}
+
+.footer-nav {
+  &__list {
+    margin: 3rem 0;
+  }
+
+  &__item:first-child {
+    font-weight: 700;
+    margin-bottom: .8rem;
+  }
+
+  &__link {
+    padding: .4rem 0;
+    display: block;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: $grey;
+  }
+}
+
+.social {
+  &__link {
+    display: inline-block;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  &__img {
+    display: block;
+  }
+}
+
+// Tablet 768px
+@media screen and (min-width: 768px) {
+
+  .intro,
+  .url,
+  .product-info {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .btn {
+    width: unset;
+    padding: 1.35rem 2.6rem;
+    margin: 0 0 0 .5rem;
+
+    &__group {
+      display: flex;
+      margin: 0;
+    }
+
+    &--primary {
+      align-self: flex-start;
+
+      &:hover {
+        background-color: #91e7e7;
+        transition: background-color 200ms ease;
+      }
+    }
+
+    &--copied:hover {
+      background-color: #3b3054;
+    }
+
+    &--small {
+      padding: 1rem 2.1rem;
+    }
+
+    &--login {
+      color: $greyish-violet;
+      margin: 0 .6rem;
+      padding: 1.2rem;
+    }
+  }
+
+  .text-box {
+    margin: auto 0;
+    text-align: left;
+
+    &--header {
+      text-align: center;
+      width: 80%;
+      margin: auto;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+
+  // Header and navigation
+  .header {
+    &__topbar {
+      display: flex;
+      align-items: center;
+      padding: 4rem;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mb__nav {
+    display: none;
+  }
+
+  .nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2.6rem;
+    flex: 1;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      margin-right: 2rem;
+    }
+
+    &__link {
+      padding: .5rem .5rem;
+
+      &:hover {
+        color: $very-dark-blue;
+        transition: color 150ms ease;
+      }
+    }
+
+  }
+
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'body illustration';
+    row-gap: 0;
+
+    &__body {
+      margin: auto 0;
+      padding: 0;
+    }
+  }
+
+  // Url and form
+  .url {
+    padding-bottom: 4rem;
+
+    &__container {
+      transform: translateY(-4.7rem);
+    }
+  }
+
+  .form {
+    display: flex;
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    &__input {
+      margin-bottom: 0;
+    }
+
+    &__message {
+      margin-top: .3rem;
+    }
+  }
+
+  .input-wrapper {
+    flex-grow: 1;
+    margin: 0 .5rem 0 0
+  }
+
+  .item {
+    margin: 0;
+    margin-top: 1.2rem;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      display: none;
+    }
+
+    &__input,
+    &__output {
+      padding: 0;
+    }
+
+    &__output {
+      justify-self: flex-end;
+      margin-right: 1rem;
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  // Product info and features
+  .features {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'recognition records'
+      'customisable';
+    row-gap: 6rem;
+    column-gap: 3rem;
+    margin-top: 7rem;
+
+    &::after {
+      display: none;
+    }
+
+    &__card {
+
+      &::after {
+        left: 20%
+      }
+
+      &--customisable {
+        transform: translateX(calc(50% + 1.5rem));
+      }
+    }
+
+    &:nth-child(1) {
+      grid-area: recognition;
+    }
+
+    &:nth-child(2) {
+      grid-area: records;
+    }
+
+    &:nth-child(3) {
+      grid-area: customisable;
+    }
+  }
+
+  // Boost call to action
+  .boost {
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  // Footer
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem;
+  }
+
+  .footer-nav {
+    display: flex;
+    align-items: flex-start;
+
+    &__list {
+      margin: 0 2.5rem;
+    }
+
+    &__item {
+      text-align: left;
+    }
+
+    &__link:hover {
+      color: $cyan;
+      transition: color 150ms ease;
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
 }

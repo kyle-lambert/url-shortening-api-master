@@ -34,7 +34,7 @@
           </li>
         </ul>
         <div class="btn__group">
-          <button class="btn">Login</button>
+          <button class="btn btn--login">Login</button>
           <button class="btn btn--primary btn--rounded btn--">Sign Up</button>
         </div>
       </nav>
@@ -87,20 +87,25 @@
 
       <div class="item">
         <span class="item__input">https://www.frontendmentour.io</span>
-        <span class="item__output">https://rel.ink/k4lKyk</span>
-        <button class="btn btn--primary">Copy</button>
+        <div class="item__output-wrapper">
+          <span class="item__output">https://rel.ink/k4lKyk</span>
+          <button class="btn btn--primary btn--small btn--copied">Copy</button>
+        </div>
       </div>
 
       <div class="item">
         <span class="item__input">https://www.frontendmentour.io</span>
-        <span class="item__output">https://rel.ink/k4lKyk</span>
-        <button class="btn btn--primary btn--copied">Copy</button>
+        <div class="item__output-wrapper">
+          <span class="item__output">https://rel.ink/k4lKyk</span>
+          <button class="btn btn--primary btn--small">Copy</button>
+        </div>
       </div>
+
     </div>
   </section>
 
   <section class="product-info">
-    <div class="text-box">
+    <div class="text-box text-box--header">
       <h2>Advanced Statistics</h2>
       <p>Track your your links are performing across the web with our advanced statistics dashboard.</p>
     </div>
@@ -113,17 +118,15 @@
             repudiandae?</p>
         </div>
       </div>
-      <div class="features__card">
+      <div class="features__card features__card--records">
         <div class="text-box">
           <h3>Detailed Records</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum asperiores voluptas sint dolorem adipisci
             perspiciatis nesciunt quod! Et autem magnam ratione eos facilis numquam officia corporis nemo, quidem
-            officiis itaque.Voluptate error accusantium sed minus, voluptatibus eos molestiae repellendus, eum, nobis
-            mollitia vero. Ad voluptate soluta maxime, delectus quae qui hic earum autem ullam incidunt inventore fuga
-            porro, at tempore!</p>
+            officiis itaqu.</p>
         </div>
       </div>
-      <div class="features__card">
+      <div class="features__card features__card--customisable">
         <div class="text-box">
           <h3>Fully Customisable</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, suscipit rerum saepe dolore provident
@@ -136,15 +139,15 @@
   </section>
 
   <section class="boost">
-    <div class="text-box">
+    <div class="text-box  text-box--header">
       <h2 class="boost__header">Boost your links today</h2>
+      <button class="btn btn--primary btn--rounded">Get Started</button>
     </div>
-    <button class="btn btn--primary btn--rounded">Get Started</button>
   </section>
 
   <footer class="footer">
     <a href="/" class="logo">
-      <img src="images/logo.svg" alt="Shortly brand logo" class="logo__img">
+      <img src="images/logo-white.svg" alt="Shortly brand logo" class="logo__img">
     </a>
 
     <nav class="footer-nav">
