@@ -173,6 +173,10 @@ p {
   background-color: $dark-violet;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
 
+  .btn--primary {
+    width: 100%;
+  }
+
   &__list {
     border-bottom: 1px solid rgba(158, 154, 167, 0.4);
   }
@@ -229,6 +233,8 @@ p {
   background-image: url(../images/bg-shorten-mobile.svg);
   background-position: top right;
   background-repeat: no-repeat;
+  background-size: auto;
+  background-size: 70% 95%;
   padding: 2.4rem;
   background-color: $dark-violet;
   border-radius: 10px;
@@ -549,7 +555,6 @@ p {
         transition: color 150ms ease;
       }
     }
-
   }
 
   .intro {
@@ -577,6 +582,7 @@ p {
     background-image: url(../images/bg-shorten-desktop.svg);
     background-position: top right;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 
     &__input {
       margin-bottom: 0;
@@ -664,7 +670,6 @@ p {
     background-image: url(../images/bg-boost-desktop.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -710,15 +715,15 @@ p {
 // Desktop 1028px
 @media screen and (min-width: 1024px) {
   h1 {
-    font-size: 4.4rem;
+    font-size: 4.2rem;
   }
 
   h2 {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   h1,
@@ -797,28 +802,6 @@ p {
 
 // Desktop large 1266px
 @media screen and (min-width: 1266px) {
-  h1 {
-    font-size: 4.6rem;
-  }
-
-  h2 {
-    font-size: 3.6rem;
-  }
-
-  h3 {
-    font-size: 3.2rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  p {
-    margin-bottom: 1.8rem;
-  }
-
-  p {
-    font-size: 1.8rem;
-  }
 
   .intro,
   .url,
@@ -827,12 +810,28 @@ p {
     padding-right: 8rem;
   }
 
+  .btn--login {
+    margin: 0 1.2rem;
+  }
+
   .text-box--header {
     width: 50%;
   }
 
   .intro__body .text-box {
     width: 85%;
+  }
+
+  .nav {
+    margin-left: 3rem;
+
+    &__item {
+      margin-right: 2rem;
+    }
+  }
+
+  .item {
+    margin-top: 1.6rem;
   }
 
   .header__topbar,
@@ -846,7 +845,6 @@ p {
   }
 
   .footer-nav {
-    margin-right: 4rem;
+    margin-right: 2rem;
   }
-
 }
