@@ -586,10 +586,15 @@ p {
 
     &__input {
       margin-bottom: 0;
+
+      &:focus {
+        border: 2px solid $cyan;
+        transition: border 250ms ease;
+      }
     }
 
     &__message {
-      margin-top: .3rem;
+      margin-top: .5rem;
     }
   }
 

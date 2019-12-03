@@ -600,8 +600,13 @@ p {
   .form__input {
     margin-bottom: 0;
   }
+  .form__input:focus {
+    border: 2px solid #2acfcf;
+    -webkit-transition: border 250ms ease;
+    transition: border 250ms ease;
+  }
   .form__message {
-    margin-top: .3rem;
+    margin-top: .5rem;
   }
   .input-wrapper {
     -webkit-box-flex: 1;
