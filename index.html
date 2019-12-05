@@ -77,18 +77,20 @@
     <div class="url__container">
       <form action="#" class="form">
         <div class="input-wrapper">
-          <input type="text" class="form__input" placeholder="Shorten a link here...">
+          <input type="text" class="form__input" id="formInput" placeholder="Shorten a link here...">
           <span class="form__message">Please add a link</span>
         </div>
-        <button type="submit" class="btn btn--primary">Shorten It!</button>
+        <button type="submit" id="formSubmit" class="btn btn--primary">Shorten It!</button>
       </form>
 
-      <div class="item" data-ID="">
-        <span class="item__input" id="inputUrl">https://www.frontendmentour.io</span>
-        <div class="item__output-wrapper">
-          <span class="item__output" id="shortenedUrl">https://rel.ink/k4lKyk</span>
-          <button class="btn btn--primary btn--small btn--copied">Copy</button>
-        </div>
+      <div class="url-item__container">
+        <!-- <div class="item" data-ID="">
+          <span class="item__input" id="inputUrl">https://www.frontendmentour.io</span>
+          <div class="item__output-wrapper">
+            <span class="item__output" id="shortenedUrl">https://rel.ink/k4lKyk</span>
+            <button class="btn btn--primary btn--small btn--copied">Copy</button>
+          </div>
+        </div> -->
       </div>
 
     </div>
@@ -195,6 +197,7 @@
       </a>
     </div>
   </footer>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

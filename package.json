@@ -1,0 +1,22 @@
+{
+  "name": "url-shortening-api-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylelambert001/url-shortening-api-master.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kylelambert001/url-shortening-api-master/issues"
+  },
+  "homepage": "https://github.com/kylelambert001/url-shortening-api-master#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
