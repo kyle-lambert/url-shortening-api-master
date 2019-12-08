@@ -308,23 +308,16 @@ p {
   }
 
   &__input {
+    margin-left: -1.8rem;
+    margin-right: -1.8rem;
+    padding: 1.2rem 1.8rem;
     color: $dark-violet;
+    border-bottom: 1px solid $very-light-greyish-violet;
   }
 
   &__output {
     color: $cyan;
   }
-
-  &::after {
-    content: '';
-    width: 100%;
-    top: 4.9rem;
-    left: 0;
-    height: 1px;
-    background-color: $very-light-greyish-violet;
-    position: absolute;
-  }
-
 }
 
 // Product information and features
@@ -621,6 +614,12 @@ p {
 
     &::after {
       display: none;
+    }
+
+    &__input {
+      border-bottom: none;
+      margin: 0;
+      margin-right: 2rem;
     }
 
     &__input,

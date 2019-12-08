@@ -335,21 +335,15 @@ p {
 }
 
 .item__input {
+  margin-left: -1.8rem;
+  margin-right: -1.8rem;
+  padding: 1.2rem 1.8rem;
   color: #3b3054;
+  border-bottom: 1px solid #eff1f7;
 }
 
 .item__output {
   color: #2acfcf;
-}
-
-.item::after {
-  content: '';
-  width: 100%;
-  top: 4.9rem;
-  left: 0;
-  height: 1px;
-  background-color: #eff1f7;
-  position: absolute;
 }
 
 .product-info {
@@ -637,6 +631,11 @@ p {
   }
   .item::after {
     display: none;
+  }
+  .item__input {
+    border-bottom: none;
+    margin: 0;
+    margin-right: 2rem;
   }
   .item__input, .item__output {
     padding: 0;
