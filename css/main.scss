@@ -273,6 +273,10 @@ p {
     font-size: 1.2rem;
     font-style: italic;
     color: $red;
+
+    &--active {
+      display: block;
+    }
   }
 }
 
@@ -590,6 +594,10 @@ p {
       &:focus {
         border: 2px solid $cyan;
         transition: border 250ms ease;
+      }
+
+      &--error:focus {
+        border: 2px solid $red;
       }
     }
 
