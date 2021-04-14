@@ -1,36 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app.js" defer></script>
+    <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/app.js" defer></script>
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="header__topbar">
+        <a href="/" class="logo">
+          <img
+            src="images/logo.svg"
+            alt="Shortly brand logo"
+            class="logo__img"
+          />
+        </a>
 
-<body>
-  <header class="header">
-    <div class="header__topbar">
-      <a href="/" class="logo">
-        <img src="images/logo.svg" alt="Shortly brand logo" class="logo__img">
-      </a>
+        <button class="hamburger">
+          <img
+            src="images/icon-hamburger.svg"
+            alt="Hamburger toggle icon"
+            class="hamburger__icon"
+          />
+        </button>
 
-      <button class="hamburger">
-        <img src="images/icon-hamburger.svg" alt="Hamburger toggle icon" class="hamburger__icon">
-      </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Recources</a>
+            </li>
+          </ul>
+          <div class="btn__group">
+            <button class="btn btn--login">Login</button>
+            <button class="btn btn--primary btn--rounded">Sign Up</button>
+          </div>
+        </nav>
+      </div>
 
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Features</a>
+      <nav class="mb-nav">
+        <ul class="mb-nav__list">
+          <li class="mb-nav__item">
+            <a href="#" class="mb-nav__link">Features</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Pricing</a>
+          <li class="mb-nav__item">
+            <a href="#" class="mb-nav__link">Pricing</a>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Recources</a>
+          <li class="mb-nav__item">
+            <a href="#" class="mb-nav__link">Recources</a>
           </li>
         </ul>
         <div class="btn__group">
@@ -38,158 +69,183 @@
           <button class="btn btn--primary btn--rounded">Sign Up</button>
         </div>
       </nav>
-    </div>
+    </header>
 
-    <nav class="mb-nav">
-      <ul class="mb-nav__list">
-        <li class="mb-nav__item">
-          <a href="#" class="mb-nav__link">Features</a>
-        </li>
-        <li class="mb-nav__item">
-          <a href="#" class="mb-nav__link">Pricing</a>
-        </li>
-        <li class="mb-nav__item">
-          <a href="#" class="mb-nav__link">Recources</a>
-        </li>
-      </ul>
-      <div class="btn__group">
-        <button class="btn btn--login">Login</button>
-        <button class="btn btn--primary btn--rounded">Sign Up</button>
-      </div>
-    </nav>
-  </header>
-
-  <section class="intro">
-    <div class="intro__body">
-      <div class="text-box">
-        <h1>More than just shorter links</h1>
-        <p>Build your brand's recognition and get detailed insights on how your links are performing</p>
-      </div>
-      <button class="btn btn--primary btn--rounded">Get Started</button>
-    </div>
-
-    <div class="illustration">
-      <img src="images/illustration-working.svg" alt="Working illustration" class="illustration__img">
-    </div>
-  </section>
-
-  <section class="url">
-    <div class="url__container">
-      <form action="#" class="form">
-        <div class="input-wrapper">
-          <input type="text" class="form__input" id="formInput" placeholder="Shorten a link here...">
-          <span class="form__message" id="formMessage">Please add a vaild url</span>
-        </div>
-        <button type="submit" id="formSubmit" class="btn btn--primary">Shorten It!</button>
-      </form>
-
-      <div class="url-item__container">
-      </div>
-    </div>
-  </section>
-
-  <section class="product-info">
-    <div class="text-box text-box--header">
-      <h2>Advanced Statistics</h2>
-      <p>Track your your links are performing across the web with our advanced statistics dashboard.</p>
-    </div>
-    <div class="features">
-      <div class="features__card features__card--recognition">
+    <section class="intro">
+      <div class="intro__body">
         <div class="text-box">
-          <h3>Brand Recognition</h3>
-          <p>Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help insil
-            confidence in your content.</p>
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand's recognition and get detailed insights on how your
+            links are performing
+          </p>
+        </div>
+        <button class="btn btn--primary btn--rounded">Get Started</button>
+      </div>
+
+      <div class="illustration">
+        <img
+          src="images/illustration-working.svg"
+          alt="Working illustration"
+          class="illustration__img"
+        />
+      </div>
+    </section>
+
+    <section class="url">
+      <div class="url__container">
+        <form action="#" class="form">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              class="form__input"
+              id="formInput"
+              placeholder="Shorten a link here..."
+            />
+            <span class="form__message" id="formMessage"
+              >Please add a vaild url</span
+            >
+          </div>
+          <button type="submit" id="formSubmit" class="btn btn--primary">
+            Shorten It!
+          </button>
+        </form>
+
+        <div class="url-item__container"></div>
+      </div>
+    </section>
+
+    <section class="product-info">
+      <div class="text-box text-box--header">
+        <h2>Advanced Statistics</h2>
+        <p>
+          Track your your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <div class="features">
+        <div class="features__card features__card--recognition">
+          <div class="text-box">
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don't
+              mean a thing. Branded links help insil confidence in your content.
+            </p>
+          </div>
+        </div>
+        <div class="features__card features__card--records">
+          <div class="text-box">
+            <h3>Detailed Records</h3>
+            <p>
+              Gain insight into who is clicking your links. Knowing when and
+              where peope engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+        </div>
+        <div class="features__card features__card--customisable">
+          <div class="text-box">
+            <h3>Fully Customisable</h3>
+            <p>
+              Improve brand awareness and content discoverablility throught
+              customisable links, supercharging audience engagement.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="features__card features__card--records">
-        <div class="text-box">
-          <h3>Detailed Records</h3>
-          <p>Gain insight into who is clicking your links. Knowing when and where peope engage with your content helps
-            inform better decisions.</p>
-        </div>
+    </section>
+
+    <section class="boost">
+      <div class="text-box text-box--header">
+        <h2 class="boost__header">Boost your links today</h2>
+        <button class="btn btn--primary btn--rounded">Get Started</button>
       </div>
-      <div class="features__card features__card--customisable">
-        <div class="text-box">
-          <h3>Fully Customisable</h3>
-          <p>Improve brand awareness and content discoverablility throught customisable links, supercharging audience
-            engagement.</p>
-        </div>
+    </section>
+
+    <footer class="footer">
+      <a href="/" class="logo">
+        <img
+          src="images/logo-white.svg"
+          alt="Shortly brand logo"
+          class="logo__img"
+        />
+      </a>
+
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item footer-nav__item--header">Features</li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Link Shortening</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Branded Links</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Analytics</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item footer-nav__item--header">Recources</li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Blog</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Developer</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Support</a>
+          </li>
+        </ul>
+
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item footer-nav__item--header">Company</li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Our Team</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Careers</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#" class="footer-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="social">
+        <a href="#" class="social__link">
+          <img
+            src="images/icon-facebook.svg"
+            alt="Facebook logo"
+            class="social__img"
+          />
+        </a>
+        <a href="#" class="social__link">
+          <img
+            src="images/icon-twitter.svg"
+            alt="Twitter logo"
+            class="social__img"
+          />
+        </a>
+        <a href="#" class="social__link">
+          <img
+            src="images/icon-pinterest.svg"
+            alt="Pinterest logo"
+            class="social__img"
+          />
+        </a>
+        <a href="#" class="social__link">
+          <img
+            src="images/icon-instagram.svg"
+            alt="Instagram logo"
+            class="social__img"
+          />
+        </a>
       </div>
-    </div>
-  </section>
-
-  <section class="boost">
-    <div class="text-box  text-box--header">
-      <h2 class="boost__header">Boost your links today</h2>
-      <button class="btn btn--primary btn--rounded">Get Started</button>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <a href="/" class="logo">
-      <img src="images/logo-white.svg" alt="Shortly brand logo" class="logo__img">
-    </a>
-
-    <nav class="footer-nav">
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item footer-nav__item--header">Features</li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Link Shortening</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Branded Links</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Analytics</a>
-        </li>
-      </ul>
-
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item footer-nav__item--header">Recources</li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Blog</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Developer</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Support</a>
-        </li>
-      </ul>
-
-      <ul class="footer-nav__list">
-        <li class="footer-nav__item footer-nav__item--header">Company</li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">About</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Our Team</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Careers</a>
-        </li>
-        <li class="footer-nav__item">
-          <a href="#" class="footer-nav__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="social">
-      <a href="#" class="social__link">
-        <img src="images/icon-facebook.svg" alt="Facebook logo" class="social__img">
-      </a>
-      <a href="#" class="social__link">
-        <img src="images/icon-twitter.svg" alt="Twitter logo" class="social__img">
-      </a>
-      <a href="#" class="social__link">
-        <img src="images/icon-pinterest.svg" alt="Pinterest logo" class="social__img">
-      </a>
-      <a href="#" class="social__link">
-        <img src="images/icon-instagram.svg" alt="Instagram logo" class="social__img">
-      </a>
-    </div>
-  </footer>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-</body>
-
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
 </html>
